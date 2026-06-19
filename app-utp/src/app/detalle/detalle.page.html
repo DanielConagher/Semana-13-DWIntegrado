@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Detalle de la app</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <h1>Comunicación entre componentes</h1>
+  <app-resumen-app [tipo]="tipo"></app-resumen-app>
+  <app-selector-tipo
+    (tipoCambiado)="actualizarTipo($event)">
+  </app-selector-tipo>
+</ion-content>
